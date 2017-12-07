@@ -25,7 +25,7 @@
         
         <section class="header">           
             
-           <a href="#" id="nav--bar">
+           <a href="#" id="nav--bar" class="menu-open">
                <div class="nav--hamburger">
                     <div class="bar top"></div>
                     <div class="bar inner"></div>
@@ -33,16 +33,24 @@
                </div>
            </a>
            
-           <div class="menu hidden">
+            <div class="menu hidden">
+                <a href="#" id="nav--bar" class="menu-close">
+                    <div class="nav--hamburger">
+                            <div class="bar top"></div>
+                            <div class="bar inner"></div>
+                            <div class="bar bottom"></div>
+                    </div>
+                </a>
+                
                <nav>
                    <ul>
-                       <li>who I am</li>
-                       <li>awesome projects</li>
-                       <li>how I work</li>
-                       <li>few stories</li>
-                       <li>profile</li>
-                       <li>clients</li>
-                       <li>contact</li>
+                       <li><a href="#me">who I am</a></li>
+                       <li><a href="#projects">awesome projects</a></li>
+                       <li><a href="#process">how I work</a></li>
+                       <li><a href="#blog">few stories</a></li>
+                       <li><a href="#profile">profile</a></li>
+                       <li><a href="#clients">clients</a></li>
+                       <li><a href="#contact">contact</a></li>
                    </ul>
                </nav>
            </div>
@@ -65,7 +73,7 @@
             </div>             
         </section> 
         
-        <section class="post-header container">
+        <section class="post-header container" id="me">
             <div class="wrapper-intro">
                 <div class="container-1 section-title">
                     <table class="pre-title">
@@ -97,7 +105,7 @@
             </div>
         </section>
 
-        <section class="container-mywork container">
+        <section class="container-mywork container" id="projects">
 
             <div class="mywork">
                 <div class="heading-mywork section-title">
@@ -195,7 +203,7 @@
             
         </section>
 
-        <section class="container-process container">
+        <section class="container-process container" id="process">
             <div class="process">
                 <div class="heading-process section-title">
                     <table class="pre-title">
@@ -260,7 +268,7 @@
 
         </section>
 
-        <section class="container-blog container">
+        <section class="container-blog container" id="blog">
             <div class="blog">
                 <div class="heading-blog section-title">
                     <table class="pre-title">
@@ -353,7 +361,7 @@
 
         </section>
 
-        <section class="container-profile container">
+        <section class="container-profile container" id="profile">
             <div class="profile">
                 <div class="heading-profile section-title">
                     <table class="pre-title">
@@ -432,7 +440,7 @@
             </div>
         </section>
 
-        <section class="container-clients container">
+        <section class="container-clients container" id="clients">
             <div class="clients">
                 <div class="heading-clients section-title">
                     <table class="pre-title">
@@ -459,7 +467,7 @@
                     </div>
 
                     <div class="clients-photo">
-                        <img src="/web-resume/assets/img/danko.jpg" alt="">
+                        <img src="assets/img/danko.jpg" alt="">
                         <p>
                             Andrej Danko
                         </p>
@@ -488,7 +496,7 @@
 
         </section>
 
-        <section class="container-contact container">
+        <section class="container-contact container" id="contact">
             <div class="contact">
                 <div class="heading-contact section-title">
                     <table class="pre-title">
@@ -544,7 +552,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
 -->
 
-        <!-- <script src="js/main.js"></script> -->
+        <script src="js/main.js"></script>
         <script src="https://use.fontawesome.com/30f1014bf5.js"></script>
 
         

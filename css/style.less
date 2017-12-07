@@ -247,36 +247,43 @@ p {
 .menu {
     z-index: 9999;
     position: absolute;
-    width: 100%;    
+    width: 100%; 
     top: 0;
     background-color: rgb(23, 18, 78);
-    nav {  
+    nav {        
         ul {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            @media @900 {
-                flex-direction: column;
-            }
-            @media @780 {
-                flex-direction: column;
-                justify-content: space-evenly;
-            }
-            li {
-                font-size: 1.5rem;
+            @media @900 {                
+                margin: 0 auto;                
+                flex-direction: column;               
+                margin-bottom: 3rem; 
+                margin-top: -2rem;                            
+            }            
+            li { 
+                font-size: 1.6rem;
                 font-weight: 400;
                 color: white;
                 display: inline-block;
                 text-decoration: none;
-                // padding-left: 2rem;
+
                 @media @780 {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
+                }
+                a {                    
+                    text-decoration: none;
+                    color: white;
+                    display: inline-block;
+                    max-width: 100%;
+                    margin: 0 auto;
                 }
             }
         }
     }
 }
+
 
 //------------------------------------------------------------------------
 //------------------------------------------------------------------------
@@ -297,9 +304,8 @@ p {
         padding: 1.5rem;
         display: flex;
         justify-content: flex-end;
-        @media @900 {
-            max-width: 0;
-            justify-content: flex-start;
+        @media @900 {            
+            // justify-content: flex-start;
         }     
         .nav--hamburger {
             display: inline-block;
