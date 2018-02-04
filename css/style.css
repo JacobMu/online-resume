@@ -166,34 +166,6 @@ p {
 .img-mywork:hover > img {
   opacity: .3;
 }
-.header a:hover .nav--hamburger .bar {
-  transition: all .3s ease;
-  -ms-transform-origin: 55%;
-      transform-origin: 55%;
-}
-@media screen and (max-width:1280px) {
-  .header a:hover .nav--hamburger .bar {
-    -ms-transform-origin: 62.5%;
-        transform-origin: 62.5%;
-  }
-}
-@media screen and (max-width:750px) {
-  .header a:hover .nav--hamburger .bar {
-    -ms-transform-origin: 68%;
-        transform-origin: 68%;
-  }
-}
-.header a:hover .nav--hamburger .inner {
-  width: 0;
-}
-.header a:hover .nav--hamburger .top {
-  -ms-transform: translateY(15px) rotateZ(45deg);
-  transform: translateY(15px) rotateZ(45deg);
-}
-.header a:hover .nav--hamburger .bottom {
-  -ms-transform: translateY(-15px) rotateZ(-45deg);
-  transform: translateY(-15px) rotateZ(-45deg);
-}
 .hidden {
   display: none;
 }
