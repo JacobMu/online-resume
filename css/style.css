@@ -5,9 +5,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 .hidden {
   display: none;
 }
+=======
+>>>>>>> 5f024f9c3e7135b0f7d98f826b792b8a66d3210c
 body,
 html {
   font-size: 16px;

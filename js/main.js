@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*jshint esversion: 6 */
 //open the nav bar 
 const MENU = document.querySelector('.menu');
@@ -30,3 +31,29 @@ function showSlidesCarousel() {
     setTimeout(showSlidesCarousel, 6000);
 }
 showSlidesCarousel();
+=======
+//open the nav bar
+
+document.querySelector('.menu').classList.add('hidden');
+
+document.querySelector('.menu-open').addEventListener('click', function() {
+    document.querySelector('.menu').classList.remove('hidden');
+    console.log('I work');
+});
+
+document.querySelector('.menu-close').addEventListener('click', function () {
+    document.querySelector('.menu').classList.add('hidden');    
+    console.log('I work');
+});
+
+
+
+var linkMenu = document.querySelector('li');
+
+function closeMenu(e) {
+    document.querySelector('.menu').classList.add('hidden');
+    
+}
+
+linkMenu.addEventListener('click', closeMenu);
+>>>>>>> 5f024f9c3e7135b0f7d98f826b792b8a66d3210c
